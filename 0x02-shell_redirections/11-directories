@@ -1,10 +1,2 @@
 #!/bin/bash
-count=0
-for dir in $(find . -mindepth 1 -maxdepth 1 -type d); do
-    if [[ $dir != "." && $dir != ".." ]]; then
-        count=$((count + 1))
-        count=$((count + $(find "$dir" -type d | wc -l)))
-    fi
-done
-echo "Total number of directories: $count"
-
+find . -type d | wc -l
