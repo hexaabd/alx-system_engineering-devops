@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo "$BREATH^$LOVE" | bc)
+export BREATH=4; export LOVE=3; echo $(bc <<< "$BREATH^$LOVE")
