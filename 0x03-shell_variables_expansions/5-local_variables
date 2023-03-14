@@ -1,2 +1,2 @@
 #!bin/bash
-set
+compgen -A variable -A export -A function
